@@ -1,0 +1,18 @@
+:root{
+    --back: rgb(3, 11, 32);
+    --header: rgb(5, 18, 49);
+    --sidebar: rgb(10, 28, 70);
+    --item: rgb(18, 40, 94);
+    --item-overlay: rgba(18, 40, 94, 0.9);
+    --back_star: rgb(18, 40, 94);
+    --star: rgb(243, 219, 0);
+    --item_hover: rgb(23, 46, 104);
+    --item_border: rgb(34, 59, 121);
+    --icon_item: rgb(36, 61, 122);
+    --hover_sidebar: rgb(18, 40, 94);
+    --back_search: rgb(10, 28, 70);
+    --placeholder: rgb(76, 106, 182);
+    --ciano: rgb(5, 168, 168);
+    --roxo: rgb(168, 5, 146);
+    --branco: rgb(255, 255, 255);
+}
