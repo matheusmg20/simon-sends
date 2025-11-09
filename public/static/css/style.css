@@ -347,7 +347,11 @@ header .search {
 
 @media (max-width: 600px) {
     header .title h1{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
+    }
+
+    .title_icon .bi-envelope-open-fill{
+        font-size: 20px;
     }
 
     header .search {
@@ -394,6 +398,15 @@ header .search {
     }
 
     .search{
-            flex-direction: row;
+        flex-direction: row;
     }
+
+    .bi-bell{
+        font-size: 20px;
+    }
+
+    .material-symbols-outlined{
+        font-size: 30px;
+    }
+
 }

@@ -102,8 +102,8 @@ hr{
 
 .fabricas .content{
     padding: 0 15px 15px 15px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
     gap: 20px;
 }
 
@@ -198,6 +198,6 @@ button,
     }
 
     button.send, button.preview{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
