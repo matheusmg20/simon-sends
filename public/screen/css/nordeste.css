@@ -19,8 +19,185 @@ body {
     display: none;
 }
 
+.transformadores{
+    margin: 20px 0;
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.transformadores > summary{
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.transformadores > summary:active{
+    background-color: #2e2e2e;
+}
+
+.transformadores summary::after{
+    font-family: "bootstrap-icons";
+    content: "\F282";
+    transition: transform 0.3s ease-out;
+}
+
+.transformadores[open] > summary::after{
+    transform: rotate(180deg);
+}
+
+.fabricas[open]{
+    background-color: #464646;
+    border-radius: 20px;
+    margin: 0 0 10px 0;
+}
+
+.fabricas summary{
+    margin: 5px 0;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: solid 2px #464646;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fabricas[open] > summary{
+    font-weight: bold;
+}
+
+.fabricas summary::after{
+    font-family: "bootstrap-icons";
+    content: "\F282";
+    transition: transform 0.3s ease-out;
+}
+
+.fabricas[open] summary::after{
+    transform: rotate(180deg);
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    border: solid 1px #595959;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.fabricas[open] summary:hover{
+    background-color: transparent;
+}
+
+.fabricas summary:hover{
+    background-color: #464646;
+}
+
+.fabricas .content{
+    padding: 0 15px 15px 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 20px;
+}
+
+.item{
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.item h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.item .buttons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.item .buttons button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    flex: 1;
+    margin: 0;
+}
+
+.preview{
+    background-color: #464646;
+    color: white;
+    transition: .5s;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview:hover{
+    background-color: #202020;
+}
+
+.send{
+    background-color: #1571b8;
+    color: white;
+    transition: .5s;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.send:hover{
+    background-color: #3a8ac7;
+}
+
+button,
+.fabricas,
+.fabricas summary:focus,
+.fabricas summary:focus-visible,
+.transformadores,
+.transformadores summary:focus,
+.transformadores summary:focus-visible {
+    -webkit-tap-highlight-color: transparent;   /* remove realce azul em dispositivos móveis */
+    outline: none;
+}
+
+/* --------------------------- responsividade ------------------------ */
+
 @media (max-width: 600px) {
     body{
         padding: 20px 20px 0 20px;
+    }
+
+    .fabricas .content{
+        flex-direction: column;
+    }
+
+    .item{
+        width: 100%;
+    }
+
+    .item h3{
+        font-size: 1.2rem;
+    }
+
+    button.send, button.preview{
+        font-size: 1rem;
     }
 }
