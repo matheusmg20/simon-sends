@@ -50,7 +50,6 @@ item.click()
 # Aguarda atualização do relatório
 time.sleep(5)
 
-
 # 4. Fecha o dropdown clicando fora (em qualquer área neutra)
 print("Fechando dropdown...")
 fundo = wait.until(EC.element_to_be_clickable((By.XPATH, '//div[contains(@class,"visualContainer")]')))
