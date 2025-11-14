@@ -91,9 +91,6 @@ mail.HTMLBody = f"""
 <div style="width: calc(100vw); border: solid 10px #A8A8A8;">
     <img src="cid:header_image" style="width: 100%;">
 </div>
-<div style="border: solid 10px #A8A8A8; border-top: 0px !important; padding: 10px 0; width: calc(100vw);">
-    <h3 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; padding-left: 20px; margin: 0;">Análise:</h3>
-</div>
 <div style="width: 100vw; border: solid 10px #A8A8A8; border-top: 0px !important;">
     <img src="cid:print_image" width="100%" style=" display: block; box-sizing: border-box; margin: 0;">
 </div>

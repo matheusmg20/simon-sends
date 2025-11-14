@@ -1,0 +1,9 @@
+ID,Data,Hora,Envio,Turno,Tempo_execução
+ENV1,2025-11-13,22:19:09,Núcleo Duro OEE TS_SOB - F7,2º Turno,42.38
+ENV2,2025-11-13,22:20:24,Boletim Manutenção TS_SOB - F7,2º Turno,42.20
+ENV3,2025-11-13,22:22:50,Núcleo Duro OEE TS_SOB - F7,2º Turno,42.14
+ENV4,2025-11-13,22:31:32,Boletim Manutenção TS_SOB - F7,2º Turno,42.22
+ENV5,2025-11-13,22:32:55,Núcleo Duro OEE TS_SOB - F7,2º Turno,42.25
+ENV6,2025-11-13,22:40:07,Núcleo Duro OEE TS_SOB - F7,2º Turno,42.20
+ENV7,2025-11-13,22:47:34,Núcleo Duro OEE TS_SOB - F7,2º Turno,42.67
+ENV8,2025-11-13,22:48:59,Núcleo Duro OEE TS_SOB - F7,2º Turno,42.73
